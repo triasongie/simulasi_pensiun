@@ -323,6 +323,28 @@ def halaman_simulasi():
 
     </style>
 """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <style>
+    /* Ubah warna teks title di dalam expander */
+    .streamlit-expanderHeader {
+        color: #5D3A00 !important; /* coklat */
+        font-weight: 500;
+    }
+
+    /* Ubah ikon panah expander jadi coklat juga */
+    details summary span {
+        color: #5D3A00 !important;
+    }
+
+    /* Optional: ubah border/outline expander */
+    .st-expander {
+        border: 2px solid #5D3A00 !important;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    </style>
+""", unsafe_allow_html=True)
     
     with st.expander("📜 Lihat Riwayat Simulasi"):
         try:
