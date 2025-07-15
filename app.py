@@ -314,7 +314,6 @@ def halaman_simulasi():
     st.markdown("---")
     st.markdown("""
     <style>     
-     /* Ganti border dan background */
     details {
         border: 2px solid #6c3c0c !important;
         border-radius: 16px !important;
@@ -326,22 +325,13 @@ def halaman_simulasi():
 
     st.markdown("""
     <style>
-    /* Ubah warna teks title di dalam expander */
     .streamlit-expanderHeader {
         color: #5D3A00 !important; /* coklat */
         font-weight: 500;
     }
 
-    /* Ubah ikon panah expander jadi coklat juga */
     details summary span {
         color: #5D3A00 !important;
-    }
-
-    /* Optional: ubah border/outline expander */
-    .st-expander {
-        border: 2px solid #5D3A00 !important;
-        border-radius: 15px;
-        padding: 5px;
     }
     </style>
 """, unsafe_allow_html=True)
