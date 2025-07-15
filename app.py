@@ -329,7 +329,9 @@ def halaman_simulasi():
         color: #5D3A00 !important; /* coklat */
         font-weight: 500;
     }
-
+    summary::marker {
+        color: #5D3A00 !important; /* Ikon panah */
+    }
     details summary span {
         color: #5D3A00 !important;
     }
