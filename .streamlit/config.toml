@@ -1,1 +1,9 @@
+[theme]
+primaryColor = "blue"
 
+[server]
+headless = true
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
