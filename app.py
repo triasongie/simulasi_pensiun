@@ -213,8 +213,7 @@ def halaman_simulasi():
             nilai_tahunan = nilai_bulanan * 12
             total_tabungan = nilai_tahunan / 0.04
            
-            faktor_pertumbuhan = ((1 + i)**durasi - 1) / (i / (1 + i))
-            tabungan_bulanan = total_tabungan / faktor_pertumbuhan
+            tabungan_bulanan = total_tabungan / (((1 + i)**durasi - 1) / (i / (1 + i)))
 
              # Simpan ke Supabase
             
