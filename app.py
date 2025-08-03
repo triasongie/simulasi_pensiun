@@ -82,7 +82,7 @@ def halaman_home():
     Beberapa alasan pentingnya menyiapkan dana pensiun sejak dini:
     <ol>
     <li><strong>Efek compounding (bunga berbunga):</strong> semakin awal kamu mulai, semakin besar hasil akhir.</li>
-    <li><strong>Menjaga kualitas hidup di masa tua</strong>, agar tetap mandiri dan sejahtera.</li>
+    <li><strong>Menjaga kualitas hidup di masa tua:</strong> agar tetap mandiri dan sejahtera.</li>
     <li><strong>Menghadapi inflasi:</strong> biaya hidup terus naik setiap tahun.</li>
     </ol>
 
@@ -353,4 +353,5 @@ if st.session_state["halaman"] == "home":
     halaman_home()
 elif st.session_state["halaman"] == "simulasi":
     halaman_simulasi()
+
 
