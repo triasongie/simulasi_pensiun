@@ -135,7 +135,7 @@ def halaman_home():
         width: auto;
         min-width: 250px;
         max-width: 100%;
-        margin: auto;
+        margin: 0 auto;
         display: block;
     }
     /* Styling huruf dalam button */
@@ -353,5 +353,6 @@ if st.session_state["halaman"] == "home":
     halaman_home()
 elif st.session_state["halaman"] == "simulasi":
     halaman_simulasi()
+
 
 
