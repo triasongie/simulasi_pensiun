@@ -71,23 +71,42 @@ def halaman_home():
 
     # Isi artikel
     informasi = """
-    <div class='artikel'>
-    Banyak orang tidak menyadari betapa pentingnya mempersiapkan dana pensiun sejak usia muda.<br><br>
-    Padahal, dengan mempersiapkannya lebih awal, beban keuangan di masa tua akan jauh lebih ringan.<br><br>
+    <div class='artikel' style='font-size:16px; line-height:1.7;'>
+    Banyak orang belum menyadari pentingnya mempersiapkan dana pensiun sejak usia muda.<br><br>
 
-    Dana pensiun adalah tabungan atau investasi jangka panjang yang disiapkan
-    untuk memenuhi kebutuhan hidup ketika seseorang sudah tidak lagi bekerja.
-    Kebutuhan ini mencakup biaya makan, tempat tinggal, kesehatan, hingga hiburan.<br><br>
+    <h3>💼 Kenapa Dana Pensiun Itu Penting?</h3>
+    Padahal, dengan memulainya lebih awal, kita dapat meringankan beban keuangan di masa tua dan memastikan kebutuhan hidup tetap terpenuhi. 
+    Masa pensiun adalah fase di mana penghasilan tetap biasanya sudah tidak ada, namun pengeluaran seperti biaya makan, tempat tinggal, dan kesehatan justru tetap ada—bahkan bisa meningkat. 
+    Oleh karena itu, tanpa persiapan yang matang, risiko keuangan di masa pensiun bisa menjadi sangat berat.<br><br>
 
-    Beberapa alasan pentingnya menyiapkan dana pensiun sejak dini:
-    <ol>
-    <li><strong>Efek compounding (bunga berbunga):</strong> semakin awal kamu mulai, semakin besar hasil akhir.</li>
-    <li><strong>Menjaga kualitas hidup di masa tua:</strong> agar tetap mandiri dan sejahtera.</li>
-    <li><strong>Menghadapi inflasi:</strong> biaya hidup terus naik setiap tahun.</li>
-    </ol>
+    <h4>Bayangkan ini 💭</h4>
+    Kamu ingin menikmati masa tua dengan tenang, tanpa harus bergantung pada anak atau keluarga. Kamu ingin tetap bisa jalan-jalan, beli makanan enak, dan menjaga kesehatan—semua itu butuh persiapan.<br><br>
 
-    Aplikasi ini akan membantu kamu menghitung apakah dana yang kamu miliki sekarang
-    cukup untuk hidup setelah pensiun, berdasarkan usia, pengeluaran, dan target usia pensiun.
+    <h3>📊 Apa Itu Dana Pensiun?</h3>
+    Dana pensiun adalah <strong>tabungan atau investasi jangka panjang</strong> yang disiapkan untuk kebutuhan hidup saat kita tidak lagi bekerja. <br><br>
+    Kebutuhan tersebut mencakup:<br>
+        🍽️ Biaya makan dan kebutuhan harian<br>
+        🏡 Tempat tinggal<br>
+        💊 Biaya kesehatan<br>
+        🎉 Hiburan & gaya hidup<br><br>
+        
+
+    <h3>🎯 Kenapa Harus Mulai dari Sekarang?</h3>
+        <ul>
+        <li><strong>Efek Compounding (bunga berbunga):</strong> Semakin awal mulai, semakin besar hasilnya. Uangmu bekerja untukmu.</li>
+        <li><strong>Jaga Kualitas Hidup:</strong> Tetap mandiri dan sejahtera saat tua nanti.</li>
+        <li><strong>Lawan Inflasi:</strong> Biaya hidup naik terus tiap tahun—persiapanmu juga harus naik.</li>
+        </ul>
+
+    <h3>🧮 Simulasikan Dana Pensiunmu Sekarang!</h3>
+    Melalui aplikasi ini, kamu bisa dengan mudah menghitung estimasi kebutuhan dana pensiun di masa depan, hanya dengan memasukkan beberapa informasi berikut:<br>
+        <ul>
+        <li>Usia saat ini</li>
+        <li>Target usia pensiun</li>
+        <li>Pengeluaran bulanan saat ini</li>
+        <li>Nilai inflasi (kenaikan harga barang dan jasa secara umum dalam suatu periode waktu tertentu)</li>
+        <li>Return investasi (persentase keuntungan dari uang yang diinvestasikan)</li>
+        </ul>
     </div>
     """
     st.markdown(informasi, unsafe_allow_html=True)
@@ -353,6 +372,7 @@ if st.session_state["halaman"] == "home":
     halaman_home()
 elif st.session_state["halaman"] == "simulasi":
     halaman_simulasi()
+
 
 
 
