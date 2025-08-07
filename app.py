@@ -71,8 +71,8 @@ def halaman_home():
 
     # Isi artikel
     informasi = """
-    <div class='artikel' style='font-size:16px; line-height:1.7;'>
-    Banyak orang belum menyadari pentingnya mempersiapkan dana pensiun sejak usia muda.<br><br>
+    <div class='artikel' style='font-size:18px; line-height:1.7;'>
+    Banyak orang belum menyadari pentingnya mempersiapkan dana pensiun sejak usia muda.<br>
 
     <h3>💼 Kenapa Dana Pensiun Itu Penting?</h3>
     Padahal, dengan memulainya lebih awal, kita dapat meringankan beban keuangan di masa tua dan memastikan kebutuhan hidup tetap terpenuhi. 
@@ -372,6 +372,7 @@ if st.session_state["halaman"] == "home":
     halaman_home()
 elif st.session_state["halaman"] == "simulasi":
     halaman_simulasi()
+
 
 
 
